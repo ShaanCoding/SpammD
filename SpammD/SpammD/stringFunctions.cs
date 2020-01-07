@@ -58,7 +58,6 @@ namespace SpammD
                     }
                     asciiStringArray.Add(stringBuilder.ToString());
                 }
-                MessageBox.Show(asciiImageDirectory);
                 return asciiStringArray;
             }
             catch (Exception ex)

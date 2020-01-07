@@ -265,12 +265,6 @@ namespace SpammD
             simulator.Keyboard.TextEntry(spammingString);
             Thread.Sleep(10);
             simulator.Keyboard.KeyPress(WindowsInput.Native.VirtualKeyCode.RETURN);
-            /*
-            Application.Current.Dispatcher.Invoke((Action)delegate {
-
-            });
-            */
-
         }
 
         private void selectImage_Click(object sender, RoutedEventArgs e)
