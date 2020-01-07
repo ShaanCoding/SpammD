@@ -52,8 +52,8 @@ namespace SpammD
         List<string> asciiStringArray;
         List<string> randomPhraseArray;
 
-        private stringFunctions stringFunctions = new stringFunctions();
-        InputSimulator simulator = new InputSimulator();
+        private static stringFunctions stringFunctions = new stringFunctions();
+        private readonly InputSimulator simulator = new InputSimulator();
 
         public MainWindow()
         {

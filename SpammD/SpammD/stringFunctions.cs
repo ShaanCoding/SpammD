@@ -18,9 +18,12 @@ namespace SpammD
         {
             try
             {
-                OpenFileDialog openFileDialog = new OpenFileDialog();
-                openFileDialog.Filter = userFilter;
-                if(openFileDialog.ShowDialog() == true)
+                OpenFileDialog openFileDialog = new OpenFileDialog
+                {
+                    Filter = userFilter
+                };
+
+                if (openFileDialog.ShowDialog() == true)
                 {
                     return openFileDialog.FileName;
                 }
@@ -97,8 +100,11 @@ namespace SpammD
         public List<string> openTXT()
         {
             List<string> randomPhraseArray = new List<string>();
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "TXT|*.txt";
+            OpenFileDialog openFileDialog = new OpenFileDialog
+            {
+                Filter = "TXT|*.txt"
+            };
+
             if (openFileDialog.ShowDialog() == true)
             {
                 string randomPhrasesDirectory = openFileDialog.FileName;
