@@ -202,7 +202,7 @@ namespace SpammD
             }
             catch (Exception ex)
             {
-                MessageBox.Show("An Error Has Occured! Error: " + ex);
+
             }
         }
 
@@ -210,18 +210,16 @@ namespace SpammD
         {
             if (e.Cancelled)
             {
-                System.Windows.MessageBox.Show("Operation Cancelled");
                 stopFlag = false;
                 startSpam.Content = "Start";
                 progressBar.Value = 100;
             }
             else if (e.Error != null)
             {
-                System.Windows.MessageBox.Show("Error in Process :" + e.Error);
+
             }
             else
             {
-                System.Windows.MessageBox.Show("Success! The task has finished successfully.");
                 stopFlag = false;
                 startSpam.Content = "Start";
                 progressBar.Value = 100;
